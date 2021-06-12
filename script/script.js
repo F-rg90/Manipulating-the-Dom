@@ -25,44 +25,39 @@ body.style.backgroundColor = 'red'
 
   // Part 3
   const favoriteThings = document.querySelector('#favorite-things');
-  const sideBar = document.querySelector('.side-bar li');
-  sideBar.parentNode.removeChild(staring people down);
+  console.log(favoriteThings)
+  favoriteThings.removeChild(favoriteThings.lastElementChild);
 
   // Part 4
 const quoteTitle = document.querySelector('#quote-title')
-style.fontSize = '2rem';
+quoteTitle.style.fontSize = '2rem';
 
 const domAdventures = document.querySelector('#dom-adventures')
-style.fontSize = '2rem';
+domAdventures.style.fontSize = '2rem';
 
   // Part 5
 const pastRaces = document.querySelector('#past-races');
-const sideBar = document.querySelector('.side-bar li');
-sideBar.parentNode.removeChild(Chicago);
+// const sideBar = document.querySelector('.side-bar li');
+pastRaces.removeChild(pastRaces.children[3]);
+
 
   // Part 6
-function sideBar() {
-  li.appendChild(document.createTextNode("six"));
-  li.setAttribute("id", "element6");
-  ul.appendChild(New York);
-}
+
+  function addRace(name) {
+    let li = document.createElement('li');
+    li.textContent = name;
+    return li;
+  }
+pastRaces.appendChild(addRace('NewYork'));
+
 
   // Part 7
-const blogPost = document.createElement("h2")
-document.createTextNode(New York)
-const blogPost = document.createElement("p")
-document.createTextNode("they taught me how to say deadass properly")
-blogPost.appendChild(text);
-const new = document.getElementById("new");
-element.appendChild(tag);
+//check CSS
 
   // Part 8
-const quote = document.querySelector('#quote-title')
-forEach(randomQuote => {item.addEventListener('click', event => { // handle click 
+  document.getElementById("quote-title").addEventListener("click", function() {
+    document.getElementById("quote-of-the-day").innerHTML.quotes('quotes')
   })
-})
-addEventListener("click", )
-
   // Part 9
 
 

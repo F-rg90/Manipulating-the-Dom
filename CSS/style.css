@@ -48,6 +48,13 @@ ul {
   margin-bottom: 3rem;
 }
 
+/* part 7 */
+
+.blog-post > h2 {
+  color: #FFF;
+  margin-bottom: 3rem;
+}
+
 .blog-post > p {
   font-size: 1.5rem;
 }
