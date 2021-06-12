@@ -38,7 +38,7 @@ domAdventures.style.fontSize = '2rem';
   // Part 5
 const pastRaces = document.querySelector('#past-races');
 // const sideBar = document.querySelector('.side-bar li');
-pastRaces.removeChild(pastRaces.children[3]);
+pastRaces.removeChild(pastRaces.children[3]);``
 
 
   // Part 6
@@ -55,11 +55,26 @@ pastRaces.appendChild(addRace('NewYork'));
 //check CSS
 
   // Part 8
-  document.getElementById("quote-title").addEventListener("click", function() {
-    document.getElementById("quote-of-the-day").innerHTML.quotes('quotes')
-  })
+  const click = function(){
+    quoteTitle.addEventListener('click', (evt) => {
+        randomQuote();
+      })
+    }
+    click()
   // Part 9
+  const switchColor = function() {
+    const blogPosts = document.querySelectorAll('.blog-post');
+    for (let words of blogPosts){
+      words.addEventListener('mouseout', (evt) => {
+        words.classList.toggle('purple');
+      })
+      words.addEventListener('mouseenter', (evt) => {
+        words.classList.toggle('red');
+      })
+    }
 
+  }
+  switchColor()
 
 
 
